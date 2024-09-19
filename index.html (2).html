@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas que nunca te enviei</title>
+    <style>
+        body {
+            background-color: #f7d1cd;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #title {
+            font-size: 2em;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #message-container {
+            text-align: center;
+            display: none;
+        }
+
+        .card {
+            font-size: 50px; /* Tamanho maior para o emoji */
+            color: #ff6f61;
+            cursor: pointer;
+            position: absolute;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        #final-message {
+            display: none;
+            font-size: 1.5em; /* Fonte ajustada para leitura confortável */
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: #333;
+            position: fixed; /* Corrigido para fixar na tela */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80vw; /* Largura máxima ajustada */
+            max-height: 80vh; /* Altura máxima ajustada */
+            overflow-y: auto; /* Permite rolar se o texto for muito longo */
+        }
+
+        #close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff6f61;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0); }
+        }
+
+        .btn {
+            display: none;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #ff3b3b;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="title">Textos que nunca te enviei</div>
+    <div id="title">E que você nunca vai ler...</div>
+
+    <div id="message-container">
+        <div id="final-message">
+            <button id="close-btn">&times;</button>
+            <p>Eu não te amo com todo meu coração, um dia ele para de bater. Eu te amo com minha alma, porque ela nunca morre.</p>
+            <p>Até o fim...</p>
+        </div>
+        <button class="btn" id="restart-btn">Clique aqui para começar de novo</button>
+    </div>
+
+    <!-- Emojis de cartas clicáveis -->
+    <span class="card" style="top: 20%; left: 30%;" data-message="Sabe, as vezes eu nego, as vezes eu até mesmo falo que não sinto sua falta, mas tudo isso é apenas para esconder o vazio que minha vida é sem você. Não sou muito de falar o que eu sinto para as pessoas, nunca fui de me abrir com elas, por isso sempre que eu posso eu coloco o que sinto em formato de textos, como estou fazendo agora. Sabe, eu ainda te amo, com cada batida do meu coração, sempre ao ver seu sorriso, mesmo que de longe, meu coração ainda vibra como nunca vibrou antes. Eu ainda fico nervoso quando estou perto de você, eu ainda penso em você, todo dia, todo santo dia. Eu ainda rezo para você todas as noites. Ao contrário do que você disse, amar não é deixar ir, amar é esperar o agir e o tempo de Deus. E eu acredito nisso, ele não deixa eu perder a fé. É até mesmo hipócrita falar de amor sem falar de Deus, ele sim sabe o que estou passando, ele entregou o seu único filho por amor, pelo seu amor por nós. Parei de mandar mensagem, parei de insistir, apenas entreguei nas mãos de Deus e confiei nele. Mesmo que de longe, eu ainda torço pelo seu sucesso, eu ainda fico feliz quando você está feliz, e acredito que isso é o verdadeiro significado de amar, ficar feliz em saber que a outra pessoa está feliz, mesmo que longe de você. Talvez você não me ame mais, mas eu acredito que o caminho de duas pessoas não se cruzam a toa. Nada acontece na terra sem que Deus autorize, e eu acredito que a união do caminho de duas pessoas não acontece sem que ele permita, e se ele permitiu, ele tem um proposito. De 8 bilhões de pessoas e eu conhecer logo você, a partir dai podemos perceber que não foi o destino, e sim Deus. Eu ainda confio em você, nunca desistirei, nunca desanimarei, o senhor Deus está comigo. Por mais que nossos caminhos agora estejam distantes, nada é impossível para Deus. Eu já pensei em desistir muitas vezes, mas algo dentro de mim fala para eu não desistir, se é Deus, eu não sei. Mas algo fala para eu não desistir. Continuarei orando toda noite por nós.">💌</span>
+    <span class="card" style="top: 50%; left: 60%;" data-message="Oh querido amor da minha vida, a ti dedico esta mensagem. O fato de que tu não sentes mais o mesmo que remetia ao nosso início me dói, como me dói. Se eu soubesse que aquele seria o nosso último abraço, o nosso último toque, a nossa última mensagem, eu teria aproveitado cada segundo. Aconteceu tão inesperadamente e tão rápido que não tive tempo de me despedir, não tive tempo de falar o que eu tinha para falar, pois de fato eu pensei que aquilo não seria a última frase do nosso livro, eu pensei que seria apenas o início de um novo capítulo onde nós seriámos os protagonistas deste livro. Talvez de fato este seja o final da história do primeiro livro, e um começo para a continuação dele, ou não. Dedico-te cada batida do meu coração, cada pensamento do meu dia. Serás a primeira pessoa que pensarei ao amanhecer e certamente és a última em que penso antes de adormecer. Gosto de dormir, lá posso ter-te novamente em meus sonhos, onde lá és um mundo em tu não se foi. Tu estás tão bem sem mim que me a dor que eu senti quando descobri isso não foi comparável. Ainda te espero, ainda te dedico textos, ainda falo de você para minha mãe, ainda conto como você me alucina para Deus. Toda noite antes de eu ir á dormir conto a Deus cada momento que tivemos, cada sonho que planejamos, cada pensamento que eu tenho. Ainda vivo no aguardo de ver você a voltar, cruzando então a porta de onde você saiu, para assim começarmos o novo livro de nossas vidas. Um livro que não precisa acabar agora, um livro onde nós dois passamos por tudo, um livro onde nós se ajudamos a passar por cada necessidade, uma história onde podemos ser felizes, um ao lado do outro. Como você mesma disse em uma de suas belas frases, Sentimentos verdadeiros não se vão tão rápido. De fato, por você eu moveria montanha, por você eu tentaria fazer o impossível, eu mudaria, eu faria tudo. E como uma última frase deste texto que a ti dedico com toda minha alma, assim então pronuncio e recito: Mesmo que o tempo tenha mudado seus sentimentos, o meu coração ainda pulsa pelo amor que um dia compartilhamos, e cada batida é uma saudade que não quer deixar você ir.">💌</span>
+    <span class="card" style="top: 70%; left: 20%;" data-message="Oh minha garota, você não faz ideia o quanto eu sinto sua falta, do seu abraço, do seu toque, do seu sorriso, de você… com você passei os melhores dias de minha vida, dias que eu sonhei que nunca viveria, e eu vi com você. Meu coração ainda bate mais rápido quando falam seu nome, e começo a lembrar das nossas lembranças que ficaram em minha mente, e nunca jamais serão apagadas. Quando eu estava ao seu lado eu podia ser eu novamente, algo que eu não era a muito tempo, você curou feridas que não foi você que machucou, me fez uma pessoa feliz de novo. Hoje é dia 02 de setembro, eu estou na escola escrevendo isso com meu coração apreensivo.
+    Você enviou
+    Então para compensar a visão que viu você indo, veio as lágrimas para borrar minha visão, que se recusa a ver a realidade e pensa que isso é apenas mais um pesadelo prestes acabar. Gosto de escrever, as palavras me confortam, nelas eu me sinto confortado, eu não era daquelas pessoas que gostavam de escrever, mas os tempos mudam. Com o rosto escorrendo lágrimas de amor estou escrevendo esse texto, torcendo por você. Por mais que o mundo vire as costas para você, ainda estarei torcendo por você. Não gosto de quebrar promessas, aquela que eu fiz quando disse quando você precisasse eu estaria aqui, não importa o que acontecesse, a distância entre nós, não será capaz de me fazer quebrar essa promessa.
+    Você enviou
+    Eu te amo garota, nunca amei e nunca amarei alguém como ti, por mas que os tempos escureçam, os pássaros parem de cantar, o céu perca sua cor, eu estarei aqui. Minha mente se nega a acreditar que você nunca mais voltará, mas meu coração ainda tem um fio de esperança de ver você voltando. Eu falei de você para Deus (a única pessoa que eu falei para Deus foi minha mãe). E olha eu lá, toda noite rezando pelo seu sucesso, pela sua felicidade. A definição de amar é se sentir feliz com a felicidade da pessoa que você ama, mesmo que não seja ao seu lado.
+    Você enviou
+    Oh minha garota, nas noites de madrugada fico a pensar, será que você vai voltar? Mesmo que daqui a muito tempo, será que ainda poderemos ser nós de novo? Mesmo que em um futuro muito distante, ainda te espero meu amor.
+    “Por mais que o tempo leve seus sentimentos, meu coração ainda pulsa ao ouvir tua voz, ainda vibra aí ouvir o tempo nome, minha alma ainda busca pela tua.”
+    Você enviou
+    Talvez você nunca leia isso, e se ler, saiba que você continua sendo minha garota.">💌</span>
+    <span class="card" style="top: 40%; left: 80%;" data-message="Bom, talvez você nunca leia isso, talvez nunca veja esse texto, porém só quero te falar, que eu não desisti de você, nunca desisti, apenas deixei você ir ser feliz como uma nova vida. Talvez a gente se esbarre por aí, ou talvez não. Tudo que eu queria agora era voltar lá para o início, quando a vida tinha graça ao seu lado, acordar com seu bom dia, dormi com seu boa noite. Eu voltaria no tempo e recomeçaria nossa história, apagando a parte que você vai embora. Saiba que você continua sendo minha pessoa favorita nesse mundo, você continua sendo meu amor.  Quando sentir saudades, mande mensagem, quando quiser ouvir minha voz, ligue, quando quiser perder a sua noite de sono dando altas risadas e se divertindo, por mais que seja por uma tela, mande mensagem. Por mais que a distância possa parecer que eu não te quero, eu sempre vou te querer, mesmo que silenciosamente. Você não foi o meu primeiro amor, mas foi o meu primeiro amor, cada risada, cada Eu te amo, cada momento que eu tive ao seu lado, saiba que sempre estará vivo na minha lembrança. Se algum dia eu te encontrar nas estradas da vida, a gente pode até mesmo tentar novamente, mesmo com as nossas antigas memórias. Pessoas vão a todo momento, mas você não precisa ir. O fato de saber que um dia você poderá construir uma família, se casar, se apaixonar por alguém que não seja eu me assusta. E como última prova de amor, eu deixei você ir, por mais que meu coração peça para que você fique, para que você não vá, eu sei que você não me quer mais. Se a qualquer dia você quiser conversar, mesmo que em um tempo muito distante, muito distante mesmo, mesmo do que daqui a 1, 3, 5, 10 anos, mande mensagem, você sempre estará viva nas minhas memórias. Não estou desistindo do nosso amor, jamais, apenas dando uma nova oportunidade de você ser feliz, o amor não é representado com palavras, e sim com gestos, e como prova do meu amor, eu estou te dando uma nova oportunidade. Seja muito feliz, minha princesa, nunca aceite menos do que eu te dei. E se for o destino, nossas almas estrarem entrelaçadas no momento que eu te conheci, acontecerá, por mais que seja por um tempo muito grande. Seria até mesmo falso falar que eu te amo com meu coração, por isso eu falo que eu te amo com minha alma, pois a alma nunca morre...
+
+Eu te amo muito minha princesa...">💌</span>
+    <span class="card" style="top: 10%; left: 50%;" data-message="Hoje, dia 08/09/2024 faz exatamente 1 mês que eu te perdi, se ainda vou te encontrar de novo? Não sei, somente Deus poderá responder a isto. Sabe, a saudade de você aperta a cada dia mais, eu nunca pensei que iria amar alguém como amo você. Eu ainda te amo, eu ainda rezo toda vez antes de ir dormir por você, eu ainda quero ver seu sucesso e sua felicidade, porém faço isso em silêncio, pois seu coração não vibra mais como o meu vibra por você. Sabe, eu ainda tenho esperanças sabe? Mesmo que sei lá, há muito tempo, eu ainda vou te querer, te querer como a primeira vez em você me disse Eu te amo, naquela noite, eu nem consegui dormir direito de tanta felicidade. Eu acredito que se Deus colocou você na minha vida, fez nós se apaixonarmos, tem um proposito nisso tudo, talvez nós dois não vamos conseguir entender ele agora, porém logo mais sim. Sabe porque eu não desisto? Dia 04/09/2024, eu tive um sonho, onde eu estava na igreja rezando, e de repente uma voz me dizia Não desista, meu filho, sua vitória está chegando. Talvez seja Deus? Há uma chance, ou pode ser apenas coisa da minha cabeça. Desde daquele dia eu criei esperanças, e apenas entreguei tudo nas mãos de Deus, e também aprendi que nada é no nosso tempo, e sim no tempo de Deus, e acontecerá conforme o seu tempo. Pode se passar 1 ano, 2, talvez até 10, mas eu sempre estarei aqui, com o amor e chama intensa da paixão que eu tive pelo meu primeiro amor (você). Fomos as pessoas certas, porém na hora errada, mas no futuro seremos as pessoas certas, na hora certa.">💌</span>
+    <span class="card" style="top: 30%; left: 70%;" data-message="Pode ser que você nunca chegue a ler isso, e talvez essas palavras nunca alcancem você. Mas, mesmo assim, eu preciso te dizer que nunca deixei de acreditar em nós. Nunca desisti de você, apenas aceitei que precisava te deixar seguir seu caminho, encontrar sua felicidade. Quem sabe nossos destinos ainda se cruzem algum dia, ou talvez não. O que eu daria agora para voltar ao começo, à época em que tudo ao seu lado parecia mais leve, mais bonito. Eu gostaria de reviver os dias em que suas mensagens de bom dia e boa noite faziam tudo valer a pena. Se eu pudesse, reescreveria nossa história, mudando apenas o final, apagando o momento em que você partiu.
+
+    Você ainda é a pessoa que faz meu coração bater mais forte, meu amor incondicional. Se algum dia a saudade apertar, estou aqui. Se quiser ouvir minha voz, basta ligar. Se precisar de uma noite cheia de risos e conversas sem fim, eu estarei esperando. A distância entre nós não significa que eu te esqueci, na verdade, eu nunca deixei de te querer, mesmo que agora em silêncio.
+    
+    Você pode não ter sido o primeiro a quem eu amei, mas foi o amor que marcou minha vida de forma única. Cada sorriso que compartilhamos, cada eu te amo que dissemos, todos esses momentos ainda estão vivos em mim. Se, em algum momento no futuro, nossos caminhos se cruzarem de novo, talvez possamos recomeçar, com nossas antigas memórias como um novo ponto de partida. As pessoas entram e saem de nossas vidas, mas você não precisa ser uma dessas pessoas que vão embora para sempre. Saber que um dia você pode construir uma nova vida, se apaixonar por outra pessoa, me inquieta, mas como prova do amor que sinto, eu te deixei ir, mesmo quando meu coração gritava para que você ficasse.
+    
+    Se, em algum momento distante — seja daqui a um, cinco, dez anos — você sentir a necessidade de falar comigo, saiba que estou aqui. Você sempre fará parte das minhas lembranças mais queridas. Não estou desistindo do que sinto por você, longe disso. Estou apenas dando espaço para você viver sua felicidade. O amor não se define apenas por palavras, mas por gestos, e deixar você seguir em frente é o maior gesto de amor que posso te dar. Seja muito feliz, minha princesa, e nunca aceite menos do que aquilo que te dei. E se for para ser, nossos destinos se encontrarão novamente, no tempo certo, como foi quando te conheci.
+    
+    Dizer que te amo com o coração não seria suficiente. Eu te amo com a minha alma, e isso é eterno, porque a alma nunca desaparece.
+    
+    Eu te amo, minha princesa, para sempre."">💌</span>
+
+    <span class="card" style="top: 60%; left: 10%;" data-message="Te encontrar foi o maior presente da minha vida...">💌</span>
+    
+    <script>
+        // Função para quando clicar na cartinha
+        const cards = document.querySelectorAll('.card');
+        const messageContainer = document.getElementById('message-container');
+        const finalMessage = document.getElementById('final-message');
+        const restartBtn = document.getElementById('restart-btn');
+
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                const message = this.getAttribute('data-message');
+                showMessage(message);
+                this.style.display = 'none';  // Remove a cartinha após o clique
+            });
+        });
+
+        function showMessage(message) {
+            const messageBox = document.createElement('div');
+            messageBox.style.position = 'fixed'; // Corrigido para manter a posição na tela
+            messageBox.style.top = '50%';
+            messageBox.style.left = '50%';
+            messageBox.style.transform = 'translate(-50%, -50%)';
+            messageBox.style.backgroundColor = 'white';
+            messageBox.style.padding = '20px';
+            messageBox.style.borderRadius = '10px';
+            messageBox.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.2)';
+            messageBox.style.color = '#333';
+            messageBox.style.fontSize = '1.2em';
+            messageBox.style.maxWidth = '80vw';
+            messageBox.style.maxHeight = '80vh';
+            messageBox.style.overflowY = 'auto';
+
+            const closeBtn = document.createElement('button');
+            closeBtn.id = 'close-btn';
+            closeBtn.textContent = '×';
+            closeBtn.style.position = 'absolute';
+            closeBtn.style.top = '10px';
+            closeBtn.style.right = '10px';
+            closeBtn.style.background = '#ff6f61';
+            closeBtn.style.border = 'none';
+            closeBtn.style.color = 'white';
+            closeBtn.style.fontSize = '1.5em';
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.style.borderRadius = '50%';
+            closeBtn.style.width = '30px';
+            closeBtn.style.height = '30px';
+            closeBtn.style.textAlign = 'center';
+            closeBtn.style.lineHeight = '30px';
+            closeBtn.addEventListener('click', () => {
+                messageBox.remove();
+                checkCards();
+            });
+
+            const messageContent = document.createElement('p');
+            messageContent.textContent = message;
+
+            messageBox.appendChild(messageContent);
+            messageBox.appendChild(closeBtn);
+            document.body.appendChild(messageBox);
+        }
+
+        function checkCards() {
+            const visibleCards = document.querySelectorAll('.card:not([style*="display: none"])');
+            if (visibleCards.length === 0) {
+                showFinalMessage();
+            }
+        }
+
+        function showFinalMessage() {
+            messageContainer.style.display = 'block';
+            finalMessage.style.display = 'block';
+            restartBtn.style.display = 'inline-block';
+        }
+
+        restartBtn.addEventListener('click', () => {
+            location.reload();  // Reinicia a página
+        });
+    </script>
+</body>
+</html>
